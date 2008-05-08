@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: S2Dao.PHP5 Eclipse Plug-in Core
+Bundle-SymbolicName: org.seasar.php.s2dao.core;singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: org.seasar.php.s2dao.core.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.core.resources
+Eclipse-LazyStart: true
+Bundle-Vendor: Seasar.org
+Export-Package: org.seasar.php.s2dao.core,
+ org.seasar.php.s2dao.core.creator,
+ org.seasar.php.s2dao.core.creator.dicon,
+ org.seasar.php.s2dao.core.creator.doc,
+ org.seasar.php.s2dao.core.creator.php,
+ org.seasar.php.s2dao.core.impl,
+ org.seasar.php.s2dao.core.internal;x-internal:=true,
+ org.seasar.php.s2dao.core.internal.codegen;x-internal:=true,
+ org.seasar.php.s2dao.core.structure,
+ org.seasar.php.s2dao.core.structure.type,
+ org.seasar.php.s2dao.core.structure.util,
+ org.seasar.php.s2dao.core.util,
+ org.seasar.php.s2dao.core.writer

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="S2Dao.PHP5-Plugin.viewerContribution1"
+            targetID="#PHPEditorContext">
+         <menu
+               id="org.seasar.php.s2dao.phpeditor.ui.source.menu"
+               path="additions"
+               label="S2Dao.PHP5">
+            <separator name="entityGroup"/>
+            <separator name="selectedGroup"/>
+            <groupMarker name="entity"/>
+            <separator name="daoGroup"/>
+         </menu>
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.AllEntityAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.EntityAllAction"
+               label="Entity用メソッドの生成"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/entityGroup"/>
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.MethodCreatorsAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.ToStringAction"
+               label="__toStringの生成"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/entityGroup"/>
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.MethodCreatorsAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.SerializableAction"
+               label="serialize/unserializeの生成"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/entityGroup"/>
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.MethodCreatorsAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.SetterGetterAction"
+               label="setter/getterの生成"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/entityGroup"
+               />
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.AnnotationsAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.TableAnnotaionAction"
+               label="TABLEアノテーションの付加"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/entityGroup"/>
+         <action
+               class="org.seasar.php.s2dao.phpeditor.actions.AnnotationsAction"
+               id="org.seasar.php.s2dao.phpeditor.context.actions.ColumnAnnotaionAction"
+               label="選択中のプロパティの_COLUMNアノテーションの付加"
+               menubarPath="org.seasar.php.s2dao.phpeditor.ui.source.menu/selectedGroup"/>
+      </viewerContribution>
+   </extension>
+</plugin>

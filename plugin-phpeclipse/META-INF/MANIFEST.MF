@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: S2Dao.PHP5 Eclipse Plug-in for PHPEclipse
+Bundle-SymbolicName: org.seasar.php.s2dao.phpeclipse;singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: org.seasar.php.s2dao.core.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.core.resources,
+ org.seasar.php.s2dao.core,
+ net.sourceforge.phpeclipse
+Eclipse-LazyStart: true
+Bundle-Vendor: Seasar.org
